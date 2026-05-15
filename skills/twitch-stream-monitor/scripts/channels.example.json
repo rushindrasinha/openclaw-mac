@@ -1,0 +1,15 @@
+{
+  "channels": [
+    {"player": "PlayerOne", "twitch": "playeronetwitch"},
+    {"player": "PlayerTwo", "twitch": "playertwotwitch"},
+    {"player": "PlayerThree", "twitch": "playerthreetwitch"}
+  ],
+  "recordings_dir": "~/recordings/streams",
+  "state_file": "/tmp/stream_monitor_state.json",
+  "streamlink_path": "/opt/homebrew/bin/streamlink",
+  "ffprobe_path": "/opt/homebrew/bin/ffprobe",
+  "upload_script": null,
+  "notify_whatsapp_jid": null,
+  "notify_on_live": true,
+  "notify_on_done": true
+}

@@ -1,0 +1,13 @@
+{
+  "channel": "yourchannelname",
+  "trigger_word": "!bot",
+  "bot_login": "your_bot_account",
+  "oauth_token": "oauth:XXXXXXXXXX",
+  "model": "claude-haiku-4-5",
+  "anthropic_api_key": "",
+  "system_prompt": "You are a helpful and fun AI chatbot in a Twitch chat. Keep responses short (under 150 chars), casual, and engaging. No offensive content.",
+  "cooldown_seconds": 30,
+  "max_messages_per_30s": 18,
+  "log_file": "chatbot.log",
+  "storage_dir": "./storage"
+}
