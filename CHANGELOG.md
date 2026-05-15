@@ -8,37 +8,20 @@ Format: [Semantic Versioning](https://semver.org)
 ## [1.0.0] — 2026-05-15
 
 ### Added
-- `install.sh` — single-command Mac setup for OpenClaw
+- `install.sh` — minimal one-command Mac setup
   - Apple Silicon + Intel support, Rosetta auto-install
-  - Hostname prompt, headless system config (sleep, SSH, auto-restart)
-  - Homebrew + core tools (git, node@24, python3, gh, ffmpeg, imagemagick, poppler, mas)
-  - Productivity tools (yt-dlp, streamlink, tmux, ripgrep, tailscale, sag, gifgrep, Amphetamine)
-  - Remote-access casks (BetterDisplay, Parsec, Jump Desktop Connect)
-  - Python venv at `~/.openclaw-venv` with common SDKs (openai, anthropic, google-api, reportlab, pillow, pdfplumber)
-  - uv + nano-pdf
-  - OpenClaw + Claude Code + firecrawl-cli + agent-browser + clawvault + genspark
+  - Homebrew + core tools (git, node@24, python3, gh)
+  - OpenClaw + Claude Code via npm
   - Workspace scaffold at `~/.openclaw/workspace/`
   - Identity templates (SOUL.md, AGENTS.md, TOOLS.md) with `[PLACEHOLDER]` values
-  - Learnings files at `~/.learnings/` (ERRORS, LEARNINGS, DECISIONS, REGRESSIONS)
-  - OpenClaw daemon install (survives reboots)
-- 13 public skills bundled in `skills/`
-- `templates/` directory with neutral identity files
+- `templates/` — neutral identity files
 - `.gitignore` blocks secrets, tokens, keys
+- Idempotent installs, safe to re-run
 
-### Skills bundled (v1.0.0)
-- ai-agent-kill-switch
-- ai-agent-ops-briefing
-- fcpxml-from-script
-- indic-language-translator
-- local-lipsync
-- outreach-crm
-- song-identifier
-- suno-music-gen
-- twitch-ai-chatbot
-- twitch-stream-monitor
-- weekly-cost-report
-- whatsapp-voice-transcriber
-- youtube-shorts-pipeline
+### Design notes
+- No skills bundled — skills are opinionated; install them later from the OpenClaw registry
+- No headless/remote tooling — that's a downstream concern, not a fresh-install need
+- No media tooling (ffmpeg, yt-dlp, streamlink) — install only what your skills require
 
 ---
 
